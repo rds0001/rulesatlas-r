@@ -1,0 +1,9 @@
+^\.Rproj\.user$
+^\.git$
+^\.github$
+^\.DS_Store$
+^cran-comments\.md$
+^inst/extdata/rules/\.gitkeep$
+^ruleatlas-manual\.pdf$
+^\.gitignore$
+^\.work$

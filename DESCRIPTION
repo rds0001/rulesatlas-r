@@ -1,0 +1,17 @@
+Package: ruleatlas
+Type: Package
+Title: Syntactic Sport and Game Rules
+Version: 0.0.1
+Authors@R: person(given = "TODO", family = "MAINTAINER", role = c("aut", "cre"), email = "maintainer@example.org")
+Description: Provides native validation of sport and game states, permitted moves
+    and observed events, deterministic rule consequences, and outcome calculation.
+    Includes 212 profiles with explicit variant scopes and a bounded declarative
+    interpreter for versioned user-defined rules. Does not simulate physical
+    movement, generate strategies, or estimate winning probabilities.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: jsonlite, stats, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
