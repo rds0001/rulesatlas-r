@@ -33,6 +33,13 @@ jobs:
           r-version: ${{ matrix.r }}
           use-public-rspm: true
       - uses: r-lib/actions/setup-tinytex@v2
+      - name: Install font required by the R PDF manual
+        run: tlmgr install courier
+      - name: Install HTML documentation validator
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --no-install-recommends -y tidy
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           working-directory: .
